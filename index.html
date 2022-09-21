@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8ba78bc8b8.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    html{
+        margin:0.2vh;
+    }
+   
+    #bg{
+       width:100vw;;
+       height:100vh;
+       
+
+    }
+    
+.planet{
+    width: 150px;
+  height: 150px;
+  position:relative;
+  top:-98vh;
+  left:7vh;
+  background: url(moonMap1.jpg);
+  border-radius: 100%;
+  background-size: 380px;
+  animation: spin 3.5s infinite linear;
+
+}
+  @keyframes spin {
+  0% {background-position-x: 0;}
+  100% {background-position-x: 380px;}
+  }
+    #font1{
+        text-align:center;
+        font-family: 'Poppins', sans-serif;
+        position:relative;
+        top:-100vh;
+        font-size:10vh;
+        color:#F0FFFF;
+        cursor:pointer;
+    }
+    .font-color1:hover{
+        text-shadow: 2px 2px 4px #000000;
+    }
+    #font2{
+        text-align:center; 
+        position:relative;
+        top:-90vh;
+        color:#ECF0F1;
+        cursor:pointer;
+    }
+    #font3{
+        text-align:center;
+        font-family: 'Dancing Script', cursive;
+        position:relative;
+        top:-80vh;
+        font-size:5vh;
+        color:#ECF0F1;
+        cursor:pointer;
+    }
+    #font2:hover{
+        text-decoration:underline;
+    }
+    
+    .fa-solid{
+        position:relative;
+        top:0.4vh;
+        left:0.5vh;
+    }
+    #logo-font{
+        position:relative;
+        top:-120vh;
+        left:32vh;
+        color:#EBDEF0;
+        font-family: 'Titan One', cursive;
+        font-size:8vh;
+        
+    }
+    #logo-font span{
+        color:#8E44AD;
+        position:relative;
+        top:5vh;
+        left:-14vh;
+        font-size:5vh;
+        font-family: 'Titan One', cursive;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    a:hover{
+        color:bisque;
+        text-decoration: none;
+    }
+</style>
+<body>
+    
+    <img src="image2.jpg" id="bg">
+    <!-- <img src="img5.png" id="img1"> -->
+    <p class="planet">
+
+    </p>
+    <h2 id="logo-font">Weigh it <span>ON</span></h2>
+    <h3 id="font1" class="font-color1">Have you ever thought what will you weigh on different planets?</h3>
+    <h4 id="font2" class="font-color1"><a href="main.html" target="_blank">Let's Find Out<i class="fa-solid fa-arrow-right"></i></a></h4>
+    <h2 id="font3" class="font-color1">Take a look at your weight on other planets to learn more<br>about how gravity works and be amazed at how much, or how little, you weigh on other worlds.</h2>
+    
+</body>
+</html>

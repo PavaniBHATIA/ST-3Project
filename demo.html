@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  #input2{
+    height:5vh;
+    width:20vh;
+    background-color: blue;
+  }
+</style>
+
+<body>
+    <input type="number" id="input1">
+    <button type="submit" onclick="myFunc()">Click</button><br><br>
+    <div id="input2"></div>
+</body>
+<script>
+  function myFunc(){
+  var n1=document.getElementById("input1").value;
+  var n2=n1*0.53;
+  document.getElementById("input2").innerHTML=n2;
+  }
+</script>
+</html>

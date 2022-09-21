@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8ba78bc8b8.js" crossorigin="anonymous"></script>
+</head>
+<style>
+body{
+    background-color:black;
+    height:100vh;
+    width:100vw;
+    padding:4vh;
+}
+#img1{
+    height:100vh;
+    width:100vw;
+    /* opacity:0.2; */
+    position:relative;
+    top:-10vh;
+    animation: zoom-in-zoom-out 20s ease infinite;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+    .main-text{
+      
+      position:relative;
+      height:10vh;
+      width:60vw;
+      background-color:#979A9A;
+      text-align:center;
+      opacity:0.6;
+      top:-90vh;
+      left:20vw;
+    }
+    .main-text #main-text1{
+      position:relative;
+      top:1.5vh;
+      font-family: 'Titan One', cursive;
+      color:white;
+    }
+    #main-text5{
+      text-align:center;
+      position:relative;
+      top:-90vh;
+      font-family: 'Titan One', cursive;
+      color:white;
+      opacity:0.5;
+      margin-top:5vh;
+      font-size:4vh;
+    }
+    .para1{
+      text-align: center;
+      position:relative;
+      color:white;
+      margin:5vh;
+      /* font-family: 'Titan One', cursive; */
+      top:-90vh;
+    }
+    #mini-box{
+      height:5vh;
+      width:10vw;
+      position:relative;
+      left:40vw;
+      margin:1vh;
+      background-color:grey;
+      opacity:0.9;
+    }
+    .input1{
+      position:relative;
+      left:-20vh;
+      
+    }
+    #weight{
+      color:lightsalmon;
+      font-size:4vh;
+    }
+    .input1 input{
+      height:5vh;
+      width:15vw;
+      background-color:lightgray;
+      border-radius:10vh;   
+    }
+    #button1{
+      position:relative;
+      height:5vh;
+      width:15vh;
+      top:-5vh;
+      left:21vh;
+      background-color:lightsalmon;
+      border-radius:10vh;
+    }
+
+    #button-text{
+      font-size:2.5vh;
+    }
+  #planets{
+    color:white;
+    position:relative;
+    font-family: 'Titan One', cursive;
+    top:-90vh;
+    /* left:80vh; */
+    text-align:center;
+    color:lightcyan;
+    font-size:8vh;
+    font-weight:900;
+  }
+  .planets2{
+    height:40vh;
+    /* width:60vw; */
+    display:flex;
+    flex-direction:row; 
+    position:relative;
+    top:-90vh;
+    flex-wrap:wrap;
+    justify-content: center;
+   
+
+  }
+  .planets1{
+    height:40vh;
+    width:20vw;
+    margin:1vh;
+  }
+  .pimg{
+    position:relative;
+    height:25vh;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: rotation 6s infinite linear;
+
+  }
+  .pimg1{
+    position:relative;
+    height:20vh;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top:2vh;
+  transform:translate(-50%,-50%);
+  animation: rotation 6s infinite linear;
+
+  }
+  @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+  
+  .pinput{
+    position:relative;
+    left:10vh;
+    height:5vh;
+    width:25vh;
+    background-color:transparent;
+    /* border:0.1vh solid white; */
+    color:white;
+    font-size:4vh;
+    text-align:center;
+    box-shadow:0.5vh 0.9vh 1vh #888888;
+  }
+  .pinput1{
+    position:relative;
+    top:4.5vh;
+    left:7vh;
+    height:5vh;
+    width:25vh;
+    background-color:white;
+    background-color:transparent;
+    /* border:0.1vh solid white; */
+    color:white;
+    font-size:4vh;
+    text-align:center;
+    box-shadow:0.5vh 0.9vh 1vh #888888;
+  }
+  .pnames{
+    text-align:center;
+    top:-10vh;
+    color:lightpink;
+    font-family: 'Rampart One', cursive;
+    font-size:5vh;
+    opacity:0.5;
+  }
+  .pnames1{
+    position:relative;
+    text-align:center;
+    top:5vh;
+    color:lightpink;
+    font-family: 'Rampart One', cursive;
+    font-size:5vh;
+    opacity:0.5;
+  }
+
+</style>
+
+<body>
+    <img src="main_img9.jpg" id="img1">
+    <div class="main-text">
+      <h1 id="main-text1">YOUR WEIGHT ON OTHER WORLDS</h1>
+    </div>
+    <h5 id="main-text5">Ever wonder what you might weigh on Mars or The Moon? Here's your chance to find out.</h5>
+    <div class="para1">
+      With this weight on other planets calculator, you can check how much you'd weigh if you landed on another planet within our Solar system.
+      One day we will be able to travel around the Solar System just like we travel abroad now. What will change however (except travel costs and time!) will be our weight on particular planets. Depending on where we land, we might weigh only a small fraction of what we weigh on Earth. Or if we choose to fly to Jupiter, we might get depressed and consider ourselves suddenly well overweight. Those will be some exciting times.
+      
+      Our calculator can help you quickly figure out how much you would weigh on particular planets around Solar System. Just insert your weight in any unit, and the tool will automatically return your weight on any other planet.
+      
+      Differences are caused by the difference in gravitational force on each of the planet. Formulas are strictly based on Newton's Gravitational Law, and the equation:<div id="mini-box"><h4 id="formula">F = GMm/r2</h4></div>
+      <div class="input1"><span id="weight">Enter your weight:</span><input type="text" id="minput"></div>
+      <button type="submit" id="button1" onclick="myFunc()"><span id="button-text">Proceed</span></button>
+    </div>
+    <h2 id="planets">THE PLANETS</h2>
+    <div class="planets2">
+    <div class="mercury planets1">
+     <img src="mercury.png" class="pimg">
+     <h2 class="pnames">Mercury</h2>
+     <div class="pinput" id="mercury1"></div>
+    </div>
+
+    <div class="venus planets1">
+      <img src="Venus.png" class="pimg">
+      <h2 class="pnames">Venus</h2>
+      <div class="pinput" id="venus1"></div>
+    </div>
+
+
+    <div class="earth planets1">
+      <img src="Earth.png" class="pimg">
+      <h2 class="pnames">Earth</h2>
+      <div class="pinput" id="earth1"></div>
+    </div>
+
+
+    <div class="mars planets1">
+      <img src="Mars1.png" class="pimg">
+      <h2 class="pnames">Mars</h2>
+      <div class="pinput" id="mars1"></div>
+    </div>
+
+    <div class="jupiter planets1">
+      <img src="Jupiter.png" class="pimg">
+      <h2 class="pnames">Jupiter</h2>
+      <div class="pinput" id="jupiter1"></div>
+    </div>
+
+    <div class="saturn planets1">
+      <img src="Saturn.png" class="pimg">
+      <h2 class="pnames">Saturn</h2>
+      <div class="pinput" id="saturn1"></div>
+    </div>
+
+    <div class="uranus planets1">
+      <img src="Uranus.png" class="pimg1">
+      <h2 class="pnames1">Uranus</h2>
+      <div class="pinput1" id="uranus1"></div>
+    </div>
+
+    <div class="neptune planets1">
+      <img src="Neptune.png" class="pimg">
+      <h2 class="pnames">Neptune</h2>
+      <div class="pinput" id="neptune1"></div>
+    </div>
+
+    </div>
+
+    <script>
+      function myFunc(){
+           var n1=document.getElementById('minput').value;
+           var mercury=0.38*n1;
+           document.getElementById("mercury1").innerText=mercury;
+
+           var venus=0.91*n1;
+           document.getElementById("venus1").innerText=venus;
+
+           var earth=1*n1;
+           document.getElementById("earth1").innerText=earth;
+
+           var mars=0.38*n1;
+           document.getElementById("mars1").innerText=mars;
+
+           var jupiter=2.34*n1;
+           document.getElementById("jupiter1").innerText=jupiter;
+
+           var saturn=1.06*n1;
+           document.getElementById("saturn1").innerText=saturn;
+
+           var uranus=0.92*n1;
+           document.getElementById("uranus1").innerText=uranus;
+
+           var neptune=1.19*n1;
+           document.getElementById("neptune1").innerText=neptune;
+
+           
+        }
+
+    </script>
+</body>
+</html>
